@@ -5,13 +5,13 @@ ruby "2.7.8"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
-
+gem 'graphql', '1.11.6'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
-
+gem 'bcrypt', '~> 3.1.13'
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
-
+gem 'graphiql-rails', '1.7.0', group: :development
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
