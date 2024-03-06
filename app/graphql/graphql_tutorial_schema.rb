@@ -1,4 +1,5 @@
 class GraphqlTutorialSchema < GraphQL::Schema
+  puts "Defining GraphqlTutorialSchema..."
   mutation(Types::MutationType)
   query(Types::QueryType)
 
