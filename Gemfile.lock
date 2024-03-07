@@ -84,6 +84,9 @@ GEM
       railties
       sprockets-rails
     graphql (1.11.6)
+    graphql-batch (0.5.2)
+      graphql (>= 1.10, < 3)
+      promise.rb (~> 0.7.2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
@@ -119,6 +122,7 @@ GEM
     nio4r (2.7.0)
     nokogiri (1.15.5-x86_64-darwin)
       racc (~> 1.4)
+    promise.rb (0.7.4)
     psych (5.1.2)
       stringio
     puma (5.6.8)
@@ -197,6 +201,7 @@ DEPENDENCIES
   debug
   graphiql-rails (= 1.7.0)
   graphql (= 1.11.6)
+  graphql-batch
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.8)
