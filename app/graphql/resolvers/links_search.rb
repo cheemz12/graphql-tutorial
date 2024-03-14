@@ -13,7 +13,8 @@ module Resolvers
     include SearchObject.module(:graphql)
 
     # scope is starting point for search
-    scope { Link.includes(:user, :votes) }
+    scope { Link.all }
+    # scope { Link.includes(:user, :votes) }
 
     # Specify the return type of the search
     type types[Types::LinkType]

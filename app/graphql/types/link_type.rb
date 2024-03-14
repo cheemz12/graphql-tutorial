@@ -1,3 +1,5 @@
+require_relative '../loaders/record_loader'
+
 module Types
   class LinkType < BaseObject
     field :id, ID, null: false
@@ -8,5 +10,9 @@ module Types
     # "method" option remaps field to an attribute of Link model
     field :posted_by, UserType, null: true, method: :user
     field :votes, [Types::VoteType], null: false
+
+    def posted_by
+      RecordLoader.for(User).load(object.user_id)
+    end
   end
 end
